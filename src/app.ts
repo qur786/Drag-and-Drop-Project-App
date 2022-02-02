@@ -159,7 +159,7 @@ class ProjectList {
 class ProjectInput {
     templateElement: HTMLTemplateElement;
     hostElement: HTMLDivElement;
-    newForm: HTMLFormElement;
+    element: HTMLFormElement;
     titleInputElement: HTMLInputElement;
     descriptionInputElement: HTMLInputElement;
     peopleInputElement: HTMLInputElement;
@@ -167,11 +167,11 @@ class ProjectInput {
         this.templateElement = document.getElementById("project-input")! as HTMLTemplateElement;
         this.hostElement = document.getElementById("app")! as HTMLDivElement;
         const importedNode = document.importNode(this.templateElement.content, true);
-        this.newForm = importedNode.firstElementChild! as HTMLFormElement;
-        this.newForm.id = "user-input";
-        this.titleInputElement = this.newForm.querySelector("#title") as HTMLInputElement;
-        this.descriptionInputElement = this.newForm.querySelector("#description") as HTMLInputElement;
-        this.peopleInputElement = this.newForm.querySelector("#people") as HTMLInputElement;
+        this.element = importedNode.firstElementChild! as HTMLFormElement;
+        this.element.id = "user-input";
+        this.titleInputElement = this.element.querySelector("#title") as HTMLInputElement;
+        this.descriptionInputElement = this.element.querySelector("#description") as HTMLInputElement;
+        this.peopleInputElement = this.element.querySelector("#people") as HTMLInputElement;
         this.attach();
         this.configure();
     }
@@ -230,11 +230,11 @@ class ProjectInput {
     }
 
     private configure() {
-        this.newForm.addEventListener("submit", this.handleSubmit);
+        this.element.addEventListener("submit", this.handleSubmit);
     }
 
     private attach() {
-        this.hostElement.insertAdjacentElement("afterbegin", this.newForm);
+        this.hostElement.insertAdjacentElement("afterbegin", this.element);
     }
 }
 
