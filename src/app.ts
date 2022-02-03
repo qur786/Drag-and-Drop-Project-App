@@ -1,3 +1,14 @@
+// Drag and Drop interfaces
+interface Draggable {
+    DragStartHandler(event: DragEvent): void;
+    DragEndHandler(event: DragEvent): void;
+}
+
+interface DropTarget {
+    DragOverHandler(event: DragEvent): void;
+    DropHandler(event: DragEvent): void;
+    DragLeaveHandler(event: DragEvent): void;
+}
 // Status Type
 enum ProjectStatus {
     Active,
