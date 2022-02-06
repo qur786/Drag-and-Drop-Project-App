@@ -17,8 +17,9 @@ I have used following **tools and technologies** to build this project
 2. NodeJS
 3. CSS
 4. HTML
-5. VSCODE
-6. yarn package manager
+5. live-server
+6. VSCODE
+
 
 ## How to use this Project
 1. Pull every file from the main branch of this repository into your local system
