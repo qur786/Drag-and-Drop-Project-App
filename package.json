@@ -1,12 +1,15 @@
 {
   "name": "draganddrop",
+  "homepage": "https://qur786.github.io/DragAndDrop",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "live-server",
-    "build": "tsc --watch"
+    "build": "tsc",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist"
   },
   "keywords": [],
   "author": "",
@@ -16,6 +19,7 @@
     "typescript": "^4.5.4"
   },
   "devDependencies": {
+    "gh-pages": "^3.2.3",
     "live-server": "^1.2.1"
   }
 }
