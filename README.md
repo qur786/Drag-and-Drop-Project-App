@@ -29,4 +29,3 @@ I have used following **tools and technologies** to build this project
 5. Build the files either running **yarn tsc -w** or run **yarn build** to compile the TS files into JS files in watch mode.
 6. Start the server by running **yarn start** command, after few seconds it will open the app in localhost:8080 in your browser.
 7. Now create new projects/tasks, drag and drop them according the status of the project
-NOTE : install live-server in your system separately
