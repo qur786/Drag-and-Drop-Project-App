@@ -1,4 +1,4 @@
-## [Drag & Drop Project](https://qur786.github.io/Drag-And-Drop-Project-App/)
+## [Drag & Drop Project](https://qur786.github.io/drag-n-drop-project)
 
 ## Description
 
@@ -31,4 +31,4 @@ To utilize this project:
 6. Start the server using `yarn start`. After a few seconds, the app will open at `localhost:8080` in your browser.
 7. Begin creating new projects/tasks and effortlessly manage them by dragging and dropping based on project status.
 
-Or you can directly acces this UI from this [link](https://qur786.github.io/Drag-And-Drop-Project-App/)
+Or you can directly acces this UI from this [link](https://qur786.github.io/drag-n-drop-project)
